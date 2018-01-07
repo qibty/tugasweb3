@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Q APARTEMEN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="assets/css/metro.min.css" rel="stylesheet">
+        <link href="assets/css/onepage-scroll.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="app-bar bg-gray">
+        <a class="app-bar-element" href="...">Q Apartemen pilihan yang tepat untuk hunian</a>
+        <span class="app-bar-divider"></span>
+        <ul class="app-bar-menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="" class="dropdown-toggle">Products</a>
+                <ul class="d-menu" data-role="dropdown">
+                    <li><a href="apart.html">zona 1</a></li>
+                    <li><a href="apartemen.html">zona 2</a></li>
+                </ul>
+            </li>
+            <li><a href="kontak.html">Contact Us</a></li>
+        </ul>
+        </div>
+
+        <div id="main">
+        <section class="page-one">
+            <div class="container">
+            <div class="grid">    
+                <div class="row cells1">
+                    <div class="cell">
+                        <div class="carousel auto stop" id="carousel" data-controls="false" data-markers="false" data-effect="fade" data-height="300">
+                            
+                            <div class="slide"><img src="assets/img/p.jpg" alt=""></div>
+                            <div class="slide"><img src="assets/img/app1.jpg" alt=""></div>
+                            <div class="slide"><img src="assets/img/app2.jpg" alt=""></div>
+                            <div class="slide"><img src="assets/img/app3.jpg" alt=""></div>
+                            <div class="slide"><img src="assets/img/app4.jpg" alt=""></div>
+                        </div><hr>
+                        <p class="info">
+                            Q Apartemen adalah hunian yang tepat untuk keluarga PT Anton Sutaya sebagai induk dari perusahaan dari Q Apartemen akan hadir sebagai kota modern terlengkap, terindah dengan infrastruktur terlengkap di Asia.kota ini di bagun dengan konsep modern namun tetap memberikan suasana yang asri seperti nuansa hijau pedesaan. Kota ini akan sangat indah untuk hunian.Adapun infrastruktur skala internasional yang ada diantaranya kereta api cepat, pembangunan Tol, pembangunan lapangan terbang baru dan lain sebagainya.Q Apartemen memfokuskan pada Kenyamanan penghuni.
+                        </p><hr>
+                        <h4>Promo terbatas:</h4>
+                        <h5>Hubungi Marketing Galeri Kami: 021-600-2004</h5>
+                        <h6>Segera Miliki Hunian di Q Apartemen Dengan harga Yang Menarik</h6>
+                        <div class="countdown" id="countdown" data-days="3"></div>
+                        <button id="bawah" class="button">Klik disini untuk mendapatkan sekarang</button>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="page-two">
+            <div class="container">
+            <div class="grid">  
+                <div class="row cells2">
+                    <div class="cell">
+                    <form>
+                        <h3>Silahkan isi form berikut untuk mendapatkan promo dari kami:</h3>
+                        <div class="input-control text">
+                            <input type="text" placeholder="Nama Lengkap" required>
+                        </div><br>
+                        <div class="input-control text">
+                            <input type="email" placeholder="Email" required>
+                        </div><br>
+                        <div class="input-control textarea" data-role="input" data-text-auto-resize="true">
+                            <textarea cols="60" placeholder="Pendapat anda terhadap layanan kami"></textarea>
+                        </div><br>
+                        <label class="input-control checkbox">
+                            <input type="checkbox" required>
+                            <span class="check"></span>
+                            <span class="caption">Saya menerima syarat & ketentuan yang berlaku</span>
+                        </label><br>
+                        <input type="reset" value="Reset">
+                        <input class="button" type="submit" value="Submit">
+                    </form>
+                    </div>
+
+                    <div class="cell">
+                        <h4> Profil Q Apartemen :</h4>
+                        <p class="info">
+                            PT. ANTON SUTAYA merupakan perusahaan pengembang real estat yang juga perusahaan induk dari Q Apartement Group, yang telah terjun dalam bisnis properti selama lebih dari 90 tahun. Baik perusahaan maupun semua anak perusahaan memiliki kepentingan besar dalam pengembangan real estat dan properti seperti hunian (perumahan, apartemen, townhouse), komersial (mall, ruko), perkantoran, dan pengembangan superblok inovatif multifungsi di daerah-daerah bisnis yang strategis. Perusahaan ini berdiri pada tahun 1920.
+                            Pada awal tahun 2017 Q Apartemen membangun kota hunian yang sangat strategis dan mengusung konsep terbaik di bandingkan dengan apartemen- apartemen lainya.  
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        </div>
+    
+        <script src="assets/js/jquery-3.2.0.min.js"></script>
+        <script src="assets/js/jquery.onepage-scroll.js"></script>                    
+        <script src="assets/js/metro.min.js"></script>    
+        <script>
+            $(function(){
+                $("#carousel").carousel();
+            });
+
+            $(function(){
+                $("#countdown").countdown();
+            });
+
+            $("#main").onepage_scroll({
+                sectionContainer: "section",
+                easing: "cubic-bezier(0.180, 0.900, 0.410, 1.210)"
+            });
+
+            $("#bawah").click(function() {
+                $("#main").moveDown();
+            });
+        </script>    
+    </body>
+</html>
